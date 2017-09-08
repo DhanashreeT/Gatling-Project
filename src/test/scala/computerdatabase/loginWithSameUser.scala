@@ -56,7 +56,7 @@ class loginWithSameUser extends Simulation {
 
   val scn = scenario("Scenario1").exec(Login.scn1)
 
-  setUp(scn.inject(rampUsers(10) over 20)).protocols(httpConf)
+  setUp(scn.inject(rampUsers(1) over 1)).protocols(httpConf)
 
 //  setUp(scn.inject(atOnceUsers(10)).protocols(httpConf))
 }
